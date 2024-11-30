@@ -1,14 +1,5 @@
-## install packer
+# My person config of Neovim
 
-> Unix, Linux Installation
+## Install lazy.nvim
 
-```shell
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-```
 
-> Windows Powershell Installation
-
-```shell
-git clone --depth 1 https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
-```
