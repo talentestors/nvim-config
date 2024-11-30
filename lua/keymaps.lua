@@ -30,10 +30,10 @@ keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- ---------- 正常模式 ---------- ---
 -- 窗口
-keymap.set("n", "<leader>sv", "<C-w>v")     -- 水平新增窗口 
-keymap.set("n", "<leader>sh", "<C-w>s")     -- 垂直新增窗口
-keymap.set("n", "<leader>q", "<C-w>q")      -- 关闭窗口
-keymap.set("n", "<leader>o", "<C-w>o")      -- 关闭其他窗口
+keymap.set("n", "<leader>sv", "<C-w>v") -- 水平新增窗口
+keymap.set("n", "<leader>sh", "<C-w>s") -- 垂直新增窗口
+keymap.set("n", "<leader>q", "<C-w>q")  -- 关闭窗口
+keymap.set("n", "<leader>o", "<C-w>o")  -- 关闭其他窗口
 -- keymap.set("n", "<leader>h", "<C-w>h")   -- 左移
 -- keymap.set("n", "<leader>j", "<C-w>j")   -- 下移
 -- keymap.set("n", "<leader>k", "<C-w>k")   -- 上移
