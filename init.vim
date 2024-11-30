@@ -1,15 +1,25 @@
 " Lazy 插件管理
 lua require('plugins')
-" lua require('conf/nvim-treesitter-context')
-" lua require('conf/nvim-treesitter')
-" lua require('conf/nvim-tree')
-" lua require('conf/bufferline')
-" lua require('conf/toggleterm')
+lua require('conf/nvim-treesitter-context')
+lua require('conf/nvim-treesitter')
+lua require('conf/nvim-tree')
+lua require('conf/bufferline')
+lua require('conf/toggleterm')
+lua require('conf/lualine')
+lua require("conf/telescope")
+lua require("conf/comment")
+lua require("conf/autopairs")
+lua require("conf/gitsigns")
+lua require("conf/luarocks")
+
+" LSP
+lua require("lsp/setup")
+lua require("lsp/nvim-cmp")
 
 " lua neovim 配置
 lua require('options')
 lua require('keymaps')
-" lua require('colorscheme')
+lua require('colorscheme')
 
 " lsp
 

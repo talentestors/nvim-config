@@ -10,6 +10,12 @@
 
 -- leader key 默认为 \
 vim.g.mapleader = " " -- leader key 为空格
+vim.g.maplocalleader = " "
+
+local opt = {
+    noremap = true,
+    silent = true,
+}
 
 -- 本地变量
 local map = vim.api.nvim_set_keymap
@@ -42,4 +48,9 @@ keymap.set("n", "<C-H>", ":bprevious<CR>")
 
 -- ---------- 插件 ---------- ---
 -- nvim-tree
-keymap.set("n", "<A-m>", ":NvimTreeToggle<CR>")
+map('n', '<A-m>', ':NvimTreeToggle<CR>', opt)
+map('n', '<A-h>', ':NvimTreeFocus<CR>', opt)
+map('n', '<A-r>', ':NvimTreeRefresh<CR>', opt)
+-- bufferline 左右Tab切换
+map("n", "<C-H>", ":BufferLineCyclePrev<CR>", opt)
+map("n", "<C-L>", ":BufferLineCycleNext<CR>", opt)

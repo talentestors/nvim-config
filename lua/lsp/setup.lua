@@ -49,6 +49,12 @@ local servers = {
   -- remark_ls = require("lsp.config.markdown"),
 }
 
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
+lspconfig.lua_ls.setup {
+  capabilities = capabilities,
+}
+
 for name, config in pairs(servers) do
   if config ~= nil and type(config) == "table" then
     -- 自定义初始化配置文件必须实现on_setup 方法
