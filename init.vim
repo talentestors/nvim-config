@@ -10,7 +10,6 @@ lua require("conf/telescope")
 lua require("conf/comment")
 lua require("conf/autopairs")
 lua require("conf/gitsigns")
-lua require("conf/luarocks")
 
 " LSP
 lua require("lsp/setup")

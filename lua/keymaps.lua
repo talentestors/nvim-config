@@ -27,13 +27,16 @@ keymap.set("i", "<C-C>", "<ESC>")
 -- 单行或多行移动
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+-- 复制粘贴多行
+keymap.set("v", "<A-j>", ":t.<CR>V")
+keymap.set("v", "<A-k>", ":t-1<CR>V")
 
 -- ---------- 正常模式 ---------- ---
 -- 窗口
 keymap.set("n", "<leader>sv", "<C-w>v") -- 水平新增窗口
 keymap.set("n", "<leader>sh", "<C-w>s") -- 垂直新增窗口
-keymap.set("n", "<leader>q", "<C-w>q")  -- 关闭窗口
-keymap.set("n", "<leader>o", "<C-w>o")  -- 关闭其他窗口
+keymap.set("n", "<leader>qw", "<C-w>q")  -- 关闭窗口
+keymap.set("n", "<leader>ow", "<C-w>o")  -- 关闭其他窗口
 -- keymap.set("n", "<leader>h", "<C-w>h")   -- 左移
 -- keymap.set("n", "<leader>j", "<C-w>j")   -- 下移
 -- keymap.set("n", "<leader>k", "<C-w>k")   -- 上移
@@ -54,3 +57,8 @@ map('n', '<A-r>', ':NvimTreeRefresh<CR>', opt)
 -- bufferline 左右Tab切换
 map("n", "<C-H>", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<C-L>", ":BufferLineCycleNext<CR>", opt)
+map("n", "<leader>qc", ":BufferLinePickClose<CR>", {noremap = true, silent = true})
+map("n", "<leader>qo", ":BufferLineCloseLeft<CR>:BufferLineCloseRight<CR>", {noremap = true, silent = true})
+map("n", "<leader>qr", ":BufferLineCloseRight<CR>", {noremap = true, silent = true})
+map("n", "<leader>ql", ":BufferLineCloseLeft<CR>", {noremap = true, silent = true})
+
