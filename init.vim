@@ -20,9 +20,6 @@ lua require('options')
 lua require('keymaps')
 lua require('colorscheme')
 
-" lsp
-
-
 " 语法高亮
 " syntax on
 

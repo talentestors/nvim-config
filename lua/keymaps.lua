@@ -61,4 +61,5 @@ map("n", "<leader>qc", ":BufferLinePickClose<CR>", {noremap = true, silent = tru
 map("n", "<leader>qo", ":BufferLineCloseLeft<CR>:BufferLineCloseRight<CR>", {noremap = true, silent = true})
 map("n", "<leader>qr", ":BufferLineCloseRight<CR>", {noremap = true, silent = true})
 map("n", "<leader>ql", ":BufferLineCloseLeft<CR>", {noremap = true, silent = true})
-
+-- ToggleTerm
+map("t", "<C-\\>", "<C-\\><C-n>", opt) -- close
