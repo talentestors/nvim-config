@@ -2,4 +2,5 @@
 
 ## Install lazy.nvim
 
+## keymaps
 

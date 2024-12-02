@@ -19,6 +19,7 @@ lua require("lsp/nvim-cmp")
 lua require('options')
 lua require('keymaps')
 lua require('colorscheme')
+lua require('autocmds')
 
 " 语法高亮
 " syntax on
