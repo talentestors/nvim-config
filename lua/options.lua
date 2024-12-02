@@ -42,3 +42,4 @@ vim.o.fileencoding = "UTF-8"
 opt.termguicolors = true
 opt.signcolumn = "yes"
 -- vim.cmd[[colorscheme tokyonight-moon]]
+

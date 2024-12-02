@@ -13,16 +13,21 @@ vim.opt.rtp:prepend(lazypath)
 
 
 local plugins = {
-    { "EdenEast/nightfox.nvim" },                                                                          -- 主题
-    "nvim-lualine/lualine.nvim",                                                                           -- 状态栏
-    "nvim-tree/nvim-tree.lua",                                                                             -- 文档树
-    "nvim-tree/nvim-web-devicons",                                                                         -- 文档树图标
-    { 'akinsho/toggleterm.nvim', version = "*", config = true },                                           -- 终端
-    "christoomey/vim-tmux-navigator",                                                                      -- 用ctrl-hjkl来定位窗口
-    { 'nvim-treesitter/nvim-treesitter'},                                              -- 语法高亮
-    "nvim-treesitter/nvim-treesitter-context",                                                             -- 语法高亮上下文
-    "p00f/nvim-ts-rainbow",                                                                                -- 配合treesitter，不同括号颜色区分
-    { 'akinsho/bufferline.nvim',         version = "*",    dependencies = 'nvim-tree/nvim-web-devicons' }, -- buffer分割线
+    {
+        "vhyrro/luarocks.nvim",
+        priority = 1000, -- Very high priority is required, luarocks.nvim should run as the first plugin in your config.
+        config = true,
+    },
+    { "EdenEast/nightfox.nvim" },                                                                      -- 主题
+    "nvim-lualine/lualine.nvim",                                                                       -- 状态栏
+    "nvim-tree/nvim-tree.lua",                                                                         -- 文档树
+    "nvim-tree/nvim-web-devicons",                                                                     -- 文档树图标
+    { 'akinsho/toggleterm.nvim', version = "*", config = true },                                       -- 终端
+    "christoomey/vim-tmux-navigator",                                                                  -- 用ctrl-hjkl来定位窗口
+    { 'nvim-treesitter/nvim-treesitter' },                                                             -- 语法高亮
+    "nvim-treesitter/nvim-treesitter-context",                                                         -- 语法高亮上下文
+    "p00f/nvim-ts-rainbow",                                                                            -- 配合treesitter，不同括号颜色区分
+    { 'akinsho/bufferline.nvim',        version = "*", dependencies = 'nvim-tree/nvim-web-devicons' }, -- buffer分割线
 
     {
         "williamboman/mason.nvim",
