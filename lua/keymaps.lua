@@ -51,19 +51,23 @@ keymap.set("n", "<C-H>", ":bprevious<CR>")
 
 -- ---------- 插件 ---------- ---
 local pluginKeys = {}
+
 -- nvim-tree
 map('n', '<A-m>', ':NvimTreeToggle<CR>', opt)
 map('n', '<A-h>', ':NvimTreeFocus<CR>', opt)
 map('n', '<A-r>', ':NvimTreeRefresh<CR>', opt)
+
 -- bufferline 左右Tab切换
 map("n", "<C-H>", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<C-L>", ":BufferLineCycleNext<CR>", opt)
-map("n", "<leader>qc", ":BufferLinePickClose<CR>", { noremap = true, silent = true })
+map("n", "<leader>q", ":BufferLinePickClose<CR>", { noremap = true, silent = true })
 map("n", "<leader>qo", ":BufferLineCloseLeft<CR>:BufferLineCloseRight<CR>", { noremap = true, silent = true })
 map("n", "<leader>qr", ":BufferLineCloseRight<CR>", { noremap = true, silent = true })
 map("n", "<leader>ql", ":BufferLineCloseLeft<CR>", { noremap = true, silent = true })
+
 -- ToggleTerm
 map("t", "<C-\\>", "<C-\\><C-n>", opt) -- close
+
 -- comment
 -- ctrl + /
 pluginKeys.comment = {
@@ -79,4 +83,6 @@ pluginKeys.comment = {
 }
 map("n", "<C-_>", "gcc", { noremap = false })
 map("v", "<C-_>", "gcc", { noremap = false })
+
 return pluginKeys
+
