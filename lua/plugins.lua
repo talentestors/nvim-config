@@ -58,6 +58,7 @@ local plugins = {
         tag = '0.1.8',                                 -- 文件检索
         dependencies = { { 'nvim-lua/plenary.nvim' } } -- requires要改为dependencies
     },
+    { 'wakatime/vim-wakatime', lazy = false }
 
 }
 local opts = {} -- 注意要定义这个变量
