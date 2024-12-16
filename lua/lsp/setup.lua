@@ -22,10 +22,12 @@ require("mason-lspconfig").setup({
         "emmet_ls",
         "html",
         "jsonls",
-        "pyright",
+        "ruff",
         "rust_analyzer",
         "taplo",
+        "markdown_oxide",
         "yamlls",
+        -- "pyright",
     },
 })
 
@@ -37,8 +39,10 @@ local lspconfig = require("lspconfig")
 -- https://github.com/williamboman/nvim-lsp-installer#available-lsps
 local servers = {
     lua_ls = require("lsp.config.lua"), -- lua/lsp/config/lua.lua
-    --  bashls = require("lsp.config.bash"),
+    markdown_oxide = require("lsp.config.markdown_oxide"),
+    ruff = require("lsp.config.ruff"),
     --  pyright = require("lsp.config.pyright"),
+    --  bashls = require("lsp.config.bash"),
     --  html = require("lsp.config.html"),
     --  cssls = require("lsp.config.css"),
     --  emmet_ls = require("lsp.config.emmet"),
