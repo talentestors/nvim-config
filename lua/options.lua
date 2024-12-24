@@ -15,8 +15,8 @@ opt.autoindent = true
 vim.o.expandtab = true
 vim.bo.expandtab = true
 
--- 防止包裹
--- opt.wrap = true
+-- 包裹
+opt.wrap = true
 
 -- 光标行
 opt.cursorline = true
