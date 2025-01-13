@@ -27,7 +27,7 @@ require("mason-lspconfig").setup({
         "taplo",
         "markdown_oxide",
         "yamlls",
-        -- "pyright",
+        "pyright",
     },
 })
 
@@ -41,15 +41,15 @@ local servers = {
     lua_ls = require("lsp.config.lua"), -- lua/lsp/config/lua.lua
     markdown_oxide = require("lsp.config.markdown_oxide"),
     ruff = require("lsp.config.ruff"),
-    --  pyright = require("lsp.config.pyright"),
-    --  bashls = require("lsp.config.bash"),
-    --  html = require("lsp.config.html"),
-    --  cssls = require("lsp.config.css"),
-    --  emmet_ls = require("lsp.config.emmet"),
-    --  jsonls = require("lsp.config.json"),
-    --  tsserver = require("lsp.config.ts"),
-    --  rust_analyzer = require("lsp.config.rust"),
-    --  yamlls = require("lsp.config.yamlls"),
+    pyright = require("lsp.config.pyright"),
+    -- bashls = require("lsp.config.bash"),
+    -- html = require("lsp.config.html"),
+    -- cssls = require("lsp.config.css"),
+    -- emmet_ls = require("lsp.config.emmet"),
+    -- jsonls = require("lsp.config.json"),
+    -- tsserver = require("lsp.config.ts"),
+    -- rust_analyzer = require("lsp.config.rust"),
+    -- yamlls = require("lsp.config.yamlls"),
     -- remark_ls = require("lsp.config.markdown"),
 }
 

@@ -59,3 +59,4 @@ vim.o.list = false
 vim.o.listchars = "space:·,tab:··"
 -- 补全增强
 vim.o.wildmenu = true
+
