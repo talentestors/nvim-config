@@ -60,6 +60,7 @@ map('n', '<A-r>', ':NvimTreeRefresh<CR>', opt)
 -- bufferline 左右Tab切换
 map("n", "<C-H>", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<C-L>", ":BufferLineCycleNext<CR>", opt)
+-- bufferline 关闭
 map("n", "<leader>q", ":BufferLinePickClose<CR>", { noremap = true, silent = true })
 map("n", "<leader>qo", ":BufferLineCloseLeft<CR>:BufferLineCloseRight<CR>", { noremap = true, silent = true })
 map("n", "<leader>qr", ":BufferLineCloseRight<CR>", { noremap = true, silent = true })
