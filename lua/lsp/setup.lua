@@ -27,7 +27,6 @@ require("mason-lspconfig").setup({
         "taplo",
         "markdown_oxide",
         "yamlls",
-        "pyright",
     },
 })
 
