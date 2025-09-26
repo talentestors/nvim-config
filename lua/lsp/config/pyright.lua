@@ -1,4 +1,4 @@
-require('lspconfig').pyright.setup {
+vim.lsp.config("pyright", {
   settings = {
     pyright = {
       -- Using Ruff's import organizer
@@ -7,8 +7,8 @@ require('lspconfig').pyright.setup {
     python = {
       analysis = {
         -- Ignore all files for analysis to exclusively use Ruff for linting
-        ignore = { '*' },
+        ignore = { "*" },
       },
     },
   },
-}
+})

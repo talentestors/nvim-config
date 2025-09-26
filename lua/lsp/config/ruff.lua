@@ -1,7 +1,6 @@
-require('lspconfig').ruff.setup({
-  init_options = {
+vim.lsp.config("ruff", {
     settings = {
-      -- Ruff language server settings go here
+        -- Ruff language server settings go here
+        ruff = {}
     }
-  }
 })

@@ -9,8 +9,5 @@ local opts = {
         require("keybindings").mapLSP(buf_set_keymap)
     end,
 }
-return {
-    on_setup = function(server)
-        server.setup(opts)
-    end,
-}
+
+return opts
